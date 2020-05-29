@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "bbogdanov/website"
+    "name": "Personal Stack"
   },
   "api": {
-    "projectId": "i7u43gxx",
-    "dataset": "development"
+    "projectId": "",
+    "dataset": ""
   },
   "plugins": [
     "@sanity/base",
@@ -27,6 +27,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./structure"
     }
   ]
 }

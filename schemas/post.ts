@@ -1,5 +1,3 @@
-import { FiTag } from 'react-icons/fi';
-
 export default {
   name: 'post',
   type: 'document',
@@ -9,6 +7,13 @@ export default {
       name: 'urlName',
       type: 'string',
       title: 'Url name'
+    },
+    {
+      name: 'series',
+      title: 'Post series (optional)',
+      type: 'reference',
+      to: [{type: 'postSeries'}],
+      description: 'A post series this post belong into'
     },
     {
       name: 'title',

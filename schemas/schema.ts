@@ -11,6 +11,7 @@ import technicalSkill from './technical-skill'
 import position from './position'
 import education from './education'
 import socialLink from './social-link'
+import postSeries from './post-series'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -27,6 +28,7 @@ export default createSchema({
     position,
     education,
     portfolio,
-    socialLink
+    socialLink,
+    postSeries
   ])
 })

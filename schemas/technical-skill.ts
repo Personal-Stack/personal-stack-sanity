@@ -1,9 +1,17 @@
+import Slider from "../components/slider";
+
 export default {
   name: 'technicalSkill',
   title: 'Technical Skill',
-  type: 'object',
+  type: 'document',
   fields: [
     { name: 'skillName', type: 'string', title: 'Skill' },
+    { name: 'skillLevel', type: 'number', title: 'Skill level',
+      inputComponent: Slider,
+      options: {
+        range: { min: 0, max: 100, step: 1 }
+      }
+    },
     {
       name: 'skillType',
       type: 'array',
@@ -13,11 +21,8 @@ export default {
       ],
       options: {
         list: [
-          { title: 'Front end', value: 'frontEnd' },
-          { title: 'Back end', value: 'backEnd' },
-          { title: 'Mobile', value: 'mobile' },
-          { title: 'DevOps', value: 'devOps' },
-          { title: 'OS', value: 'os' },
+          { title: 'Languages', value: 'frontEnd' },
+          { title: 'Frameworks / Libraries', value: 'frameworks' },
           { title: 'Others', value: 'others' },
         ]
       }
