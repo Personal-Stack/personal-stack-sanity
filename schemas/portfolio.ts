@@ -19,8 +19,11 @@ export default {
       title: 'Technical skills',
       of: [
         {
-          type: 'technicalSkill',
-        }
+          type: 'reference',
+          to: {
+            type: 'technicalSkill',
+          },
+        },
       ],
     },
     {

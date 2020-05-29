@@ -1,29 +1,30 @@
 {
-  "name": "bbogdanovwebsite",
   "private": true,
+  "name": "@personal-stack/cms",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal Stack CMS",
   "main": "package.json",
-  "author": "Bogdan Bogdanov <admin@bbogdanov.net>",
-  "license": "UNLICENSED",
+  "author": "Bogdan Bogdanov <contact@bbogdanov.dev>",
+  "license": "MIT",
   "scripts": {
     "start": "sanity start",
     "deploy": "sanity deploy",
     "deploy:graphql": "sanity graphql deploy",
+    "deploy:graphql-production": "sanity graphql deploy --dataset production",
     "test": "sanity check"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^1.149.10",
-    "@sanity/code-input": "^1.149.7",
-    "@sanity/components": "^1.149.10",
-    "@sanity/core": "^1.149.12",
-    "@sanity/default-layout": "^1.149.10",
-    "@sanity/default-login": "^1.149.11",
-    "@sanity/desk-tool": "^1.149.10",
-    "@sanity/vision": "^1.149.0",
+    "@sanity/base": "^1.149.16",
+    "@sanity/code-input": "^1.149.16",
+    "@sanity/components": "^1.149.16",
+    "@sanity/core": "^1.149.17",
+    "@sanity/default-layout": "^1.149.16",
+    "@sanity/default-login": "^1.149.16",
+    "@sanity/desk-tool": "^1.149.16",
+    "@sanity/vision": "^1.149.16",
     "prop-types": "^15.6",
     "react": "^16.2",
     "react-dom": "^16.2",
@@ -31,10 +32,12 @@
     "sanity-plugin-markdown": "^1.0.1"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^16.9.36",
     "@types/react-icons": "^3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:bbogdanov/bbogdanov.net.git"
+    "url": "git@github.com:Personal-Stack/personal-stack-sanity.git"
   }
 }
